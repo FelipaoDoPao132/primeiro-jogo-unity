@@ -5,7 +5,7 @@ Um jogo de plataforma bidimensional desenvolvido na Unity. O projeto está em fa
 ## 🚀 Como Jogar
 
 Para testar o jogo diretamente no seu computador:
-1. Vá até a seção **[Releases](https://github.com)** do repositório.
+1. Vá até a seção **[Releases](https://github.com/FelipaoDoPao132/primeiro-jogo-unity/releases)** do repositório.
 2. Baixe o arquivo arquivo `.zip` da versão mais recente.
 3. Extraia o conteúdo do arquivo em uma pasta no seu computador.
 4. Execute o arquivo `.exe` do jogo.
