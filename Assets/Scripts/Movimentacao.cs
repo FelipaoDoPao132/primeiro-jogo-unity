@@ -3,6 +3,7 @@ using UnityEngine;
 public class Movimentacao : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private SpriteRenderer sr;
 
     float velocidade = 5f;
     float pulo = 8f;
@@ -12,11 +13,19 @@ public class Movimentacao : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         float comando = Input.GetAxisRaw("Horizontal");
+
+        if (comando > 0) {
+            sr.flipX = true;
+        }
+        else if (comando < 0) {
+            sr.flipX = false;
+        }
 
         rb.linearVelocity = new Vector2(velocidade * comando, rb.linearVelocity.y);
 
